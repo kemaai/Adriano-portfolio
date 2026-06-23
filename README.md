@@ -44,6 +44,13 @@ Como **Lovable Certified Diamond**, domino o ecossistema Lovable para criar MVPs
 
 ## 📂 Projetos & Portfólio
 
+### 📊 [KemaFinance — Gestão Financeira Inteligente](./projects/kema-finance/)
+> **Stack:** React · TypeScript · Supabase · shadcn/ui · Gemini AI · Vite · PWA
+>
+> Sistema completo de gestão financeira pessoal com IA integrada. 19.323 linhas, 14 páginas, 11 tabelas. Dashboard com score financeiro 0-100, relatórios CSV/PDF, consultoria com Gemini AI, metas 50-30-20 e PWA com suporte offline.
+>
+> **🔗 [Ver repositório →](https://github.com/kemaai/kema-finance)**
+
 ### 🤖 [KEMA — Assistente Inteligente](./projects/kema-assistant/)
 > **Stack:** Hermes Agent · OmniRoute · LLMs · Python · Docker
 > 
@@ -115,6 +122,13 @@ mindmap
       Supabase
       PostgreSQL
       REST APIs
+    Frontend
+      React
+      TypeScript
+      shadcn/ui
+      Tailwind
+      Vite
+      Recharts
     Design
       Apple-like Principles
       GSAP / Motion

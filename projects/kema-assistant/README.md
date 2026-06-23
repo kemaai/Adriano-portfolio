@@ -32,13 +32,6 @@ omniroute-redis   redis:7-alpine                      6379 (Cache / Rate Limiter
 - **CLIProxyAPI** — Importação OAuth (Codex, Gemini, Claude)
 - **Redis** — Cache de sessão, rate limiting
 
-## Metodologia
-
-- **AI-first**: comandos executados por agentes autônomos com reasoning
-- **Tool-use enforcement**: ferramentas reais, não descrições
-- **Persistence**: memória entre sessões + skills de workflow
-- **Verification**: cada resultado é verificado antes de reportar
-
 ---
 
 > *Projeto pessoal — base da operação diária da KEMA*
