@@ -28,7 +28,7 @@ Como **Lovable Certified Diamond**, domino o ecossistema Lovable para criar MVPs
 
 > ⚡ **Missão:** Ajudar empresas a transformar ideias em produtos digitais funcionais em dias, não meses — reduzindo custos, acelerando validação e escalando com IA.
 
-> 📦 **+61 mil linhas de código** em produção distribuídas em **5 projetos completos** — SaaS com billing, multi-tenant, IA agents, sistemas financeiros e sites premium.
+> 📦 **+72 mil linhas de código** em produção distribuídas em **6 projetos completos** — SaaS com billing, multi-tenant, IA agents, sistemas financeiros, sites premium e briefing inteligente.
 
 ---
 
@@ -80,6 +80,13 @@ Como **Lovable Certified Diamond**, domino o ecossistema Lovable para criar MVPs
 > Landing page premium para criptomoeda com cotações ao vivo, calculadora de investimento com preço histórico real, gráfico interativo, conversor IVIP↔USD e suporte bilíngue (pt-BR/EN). **7.049 linhas**, token listado na BSC.
 >
 > 🔗 [`kemaai/ivipcoin`](https://github.com/kemaai/ivipcoin)
+
+### 📋 [Formulário KemaSites — Sistema de Briefing](./projects/formulario-kemasites/)
+> **Stack:** React · Supabase · Zod · react-hook-form · shadcn/ui
+>
+> Sistema de briefing multi-etapas para captura de informações de clientes da KemaSites. **10.194 linhas**, **15 seções**, **13 migrations**, upload de arquivos ao Supabase Storage, painel admin com geração automática de PRD.
+>
+> 🔗 [`kemaai/formulario-kemasites-72`](https://github.com/kemaai/formulario-kemasites-72)
 
 > *Mais projetos serão adicionados em breve.*
 
