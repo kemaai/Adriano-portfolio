@@ -51,6 +51,13 @@ Como **Lovable Certified Diamond**, domino o ecossistema Lovable para criar MVPs
 >
 > 🔗 [`kemaai/kema-finance`](https://github.com/kemaai/kema-finance)
 
+### 🌹 [Moisés Perfumaria — Gestão com Catálogo Online](./projects/moises-perfumaria/)
+> **Stack:** React · TypeScript · Supabase · shadcn/ui · Deno Edge · PWA · WhatsApp API
+>
+> Sistema multi-tenant de gestão para perfumaria com catálogo online público integrado ao WhatsApp. **12.930 linhas**, **17 páginas**, **14 tabelas**, PDV completo, estoque, encomendas, recebíveis e CRM com templates inteligentes de cobrança.
+>
+> 🔗 [`kemaai/moises-perfumaria`](https://github.com/kemaai/moises-perfumaria)
+
 > *Mais projetos serão adicionados em breve.*
 
 ---
