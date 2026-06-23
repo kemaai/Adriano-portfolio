@@ -65,6 +65,13 @@ Como **Lovable Certified Diamond**, domino o ecossistema Lovable para criar MVPs
 >
 > 🔗 [`kemaai/oimovvy`](https://github.com/kemaai/oimovvy) · 🏗️ **Quase pronto**
 
+### 🎬 [Amarella Creative — Site Boutique Editorial](./projects/amarellacreative/)
+> **Stack:** TanStack Start · React 19 · Framer Motion · Tailwind v4 · Cloudflare Workers · Bun
+>
+> Site premium institucional para estúdio de branding e storytelling. **6.655 linhas**, **13 seções**, design editorial com paleta oklch âmbar, animações cinematográficas e sistema extraído como skill reutilizável.
+>
+> 🔗 [`kemaai/amarellacreative`](https://github.com/kemaai/amarellacreative)
+
 > *Mais projetos serão adicionados em breve.*
 
 ---
