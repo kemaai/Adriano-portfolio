@@ -47,47 +47,11 @@ Como **Lovable Certified Diamond**, domino o ecossistema Lovable para criar MVPs
 ### 📊 [KemaFinance — Gestão Financeira Inteligente](./projects/kema-finance/)
 > **Stack:** React · TypeScript · Supabase · shadcn/ui · Gemini AI · Vite · PWA
 >
-> Sistema completo de gestão financeira pessoal com IA integrada. 19.323 linhas, 14 páginas, 11 tabelas. Dashboard com score financeiro 0-100, relatórios CSV/PDF, consultoria com Gemini AI, metas 50-30-20 e PWA com suporte offline.
+> Sistema completo de gestão financeira pessoal com IA integrada. **19.323 linhas**, **14 páginas**, **11 tabelas**, score financeiro 0-100, relatórios CSV/PDF, consultoria com Gemini AI, metas 50-30-20 e PWA com suporte offline.
 >
-> **🔗 [Ver repositório →](https://github.com/kemaai/kema-finance)**
+> 🔗 [`kemaai/kema-finance`](https://github.com/kemaai/kema-finance)
 
-### 🤖 [KEMA — Assistente Inteligente](./projects/kema-assistant/)
-> **Stack:** Hermes Agent · OmniRoute · LLMs · Python · Docker
-> 
-> Assistente pessoal autônomo que opera via Telegram com capacidades de:
-> - Chat com múltiplos modelos de IA (DeepSeek, Claude, Gemini, Groq)
-> - Geração de imagens por IA (Flux via OmniRoute)
-> - Navegação web via Chrome headless (Playwright)
-> - Transcrição de áudio (Whisper)
-> - Busca web via DuckDuckGo
-> - TTS em português brasileiro
->
-> **🔗 [Ver projeto →](./projects/kema-assistant/)**
-
-### 🌐 [Alura — Agente de Sites & SaaS](./projects/alura-kema/)
-> **Stack:** Lovable · Supabase · AI Agents · Vibe Coding
-> 
-> Agente especializado na criação sites premium e sistemas SaaS com identidade visual única e design Apple-like adaptado.
-
-### ⚙️ [OmniRoute — Infraestrutura de IA](./projects/omniroute-setup/)
-> **Stack:** Docker · Redis · Chromium · CLIProxyAPI
-> 
-> Auditoria completa e configuração do OmniRoute AI Gateway com 2927+ modelos, Redis caching, Chromium headless e importação de contas OAuth. Perfil `latest-web` com suporte a navegação.
-
-### 🔄 [Automações Inteligentes (N8N)](./projects/automation-flows/)
-> **Stack:** N8N · Webhooks · APIs REST · IA
-> 
-> Workflows de automação inteligente conectando LLMs, APIs, bancos de dados e serviços cloud para otimização de processos empresariais.
-
-### 🚀 [Deployment & Sites Premium](./projects/deployment-sites/)
-> **Stack:** Lovable · Vibe Coding · Design Systems · Cloud
-> 
-> Criação e deployment de sites premium e sistemas com metodologia AI-first. Inclui Formação AI Designer, Trade Platform e DealerSites.
-
-### 🎨 [Estudos de Design & Referências](./projects/estudos-design/)
-> **Stack:** HTML/CSS · GSAP · Motion Design · Apple-like Design Principles
-> 
-> Laboratório de estudos de design de alta referência — clones de interfaces premium para estudo de estrutura, motion, storytelling e sistemas de design.
+> *Mais projetos serão adicionados em breve.*
 
 ---
 
