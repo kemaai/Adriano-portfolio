@@ -26,7 +26,9 @@ Como **Lovable Certified Diamond**, domino o ecossistema Lovable para criar MVPs
 - **Infraestrutura moderna** → Supabase, APIs REST, cloud deployment
 - **LLMs & Agentes** → OpenAI, Gemini, OmniRoute, Hermes Agent
 
-> ⚡ **Missão:** Ajudar empresas a transformar idéias em produtos digitais funcionais em dias, não meses — reduzindo custos, acelerando validação e escalando com IA.
+> ⚡ **Missão:** Ajudar empresas a transformar ideias em produtos digitais funcionais em dias, não meses — reduzindo custos, acelerando validação e escalando com IA.
+
+> 📦 **+61 mil linhas de código** em produção distribuídas em **5 projetos completos** — SaaS com billing, multi-tenant, IA agents, sistemas financeiros e sites premium.
 
 ---
 
@@ -71,6 +73,13 @@ Como **Lovable Certified Diamond**, domino o ecossistema Lovable para criar MVPs
 > Site premium institucional para estúdio de branding e storytelling. **6.655 linhas**, **13 seções**, design editorial com paleta oklch âmbar, animações cinematográficas e sistema extraído como skill reutilizável.
 >
 > 🔗 [`kemaai/amarellacreative`](https://github.com/kemaai/amarellacreative)
+
+### 🪙 [iVipCoin — Landing Page Cripto com Dados Ao Vivo](./projects/ivipcoin/)
+> **Stack:** React · CoinGecko API · TanStack Query · Recharts · i18n · Tailwind
+>
+> Landing page premium para criptomoeda com cotações ao vivo, calculadora de investimento com preço histórico real, gráfico interativo, conversor IVIP↔USD e suporte bilíngue (pt-BR/EN). **7.049 linhas**, token listado na BSC.
+>
+> 🔗 [`kemaai/ivipcoin`](https://github.com/kemaai/ivipcoin)
 
 > *Mais projetos serão adicionados em breve.*
 
