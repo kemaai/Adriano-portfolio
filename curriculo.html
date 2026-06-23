@@ -11,22 +11,20 @@
   h2 { font-size: 14pt; font-weight: 600; margin-top: 24px; margin-bottom: 8px; padding-bottom: 4px; border-bottom: 2px solid #1a1a1a; }
   h3 { font-size: 12pt; font-weight: 600; margin-top: 16px; margin-bottom: 4px; }
   .subtitle { font-size: 12pt; color: #555; margin-bottom: 12px; font-weight: 500; }
-  .contact { font-size: 10pt; color: #555; margin-bottom: 4px; }
+  .contact { font-size: 10pt; color: #555; margin-bottom: 12px; }
   .contact a { color: #1a1a1a; text-decoration: none; }
-  .contact a:hover { text-decoration: underline; }
   .section { margin-top: 20px; }
   .project { margin-top: 14px; }
   .project-title { font-weight: 600; font-size: 11pt; }
   .project-stack { font-size: 9.5pt; color: #666; margin-bottom: 2px; font-style: italic; }
   .project-desc { font-size: 10pt; margin-top: 2px; }
-  .project-role { font-size: 10pt; margin-top: 2px; color: #333; }
+  .project-role { font-size: 10pt; margin-top: 2px; color: #333; padding-left: 10px; border-left: 3px solid #ddd; }
   .project-role strong { font-weight: 600; }
   ul { margin: 4px 0 4px 18px; font-size: 10pt; }
   li { margin-bottom: 2px; }
   .grid-2 { display: flex; flex-wrap: wrap; gap: 20px; }
   .grid-2 > div { flex: 1; min-width: 200px; }
-  .badge { display: inline-block; background: #f0f0f0; padding: 2px 8px; border-radius: 3px; font-size: 9pt; margin: 2px 0; }
-  hr { border: none; border-top: 1px solid #ddd; margin: 16px 0; }
+  .highlight { background: #f9f9f9; padding: 12px 16px; border-left: 3px solid #888; font-style: italic; margin: 12px 0; font-size: 10pt; color: #333; }
 </style>
 </head>
 <body>
@@ -34,14 +32,19 @@
 <h1>Adriano Silva</h1>
 <div class="subtitle">AI Product Builder</div>
 <div class="contact">
-  São Paulo, SP | adrianojsilva86@gmail.com | (11) 96652-4658
-  <br>linkedin.com/in/adrianojsilva86 · github.com/kemaai/Adriano-portfolio
+  São Paulo, SP | adrianojsilva86@gmail.com | (11) 96652-4658<br>
+  linkedin.com/in/adrianojsilva86 · github.com/kemaai/Adriano-portfolio
 </div>
 
 <h2>Resumo Profissional</h2>
-<p>Profissional com perfil híbrido entre produto e tecnologia. Combino pesquisa de mercado, estruturação de produtos, design de interface e orquestração de IA para entregar sistemas completos — do briefing à produção.</p>
-<p style="margin-top:6px;">Meu fluxo de trabalho: pesquisar o mercado e as necessidades do nicho > estruturar o PRD e a especificação > prototipar mockups visuais > direcionar a IA (Lovable, Replit, Claude Code) na geração do código > revisar, testar e ajustar cada funcionalidade > configurar infraestrutura (Supabase, Cloudflare, Paddle).</p>
-<p style="margin-top:6px;">Não escrevo código manualmente — mas entendo profundamente o que a IA produz, valido o resultado e garanto que o produto entregue esteja funcional, seguro e bem estruturado.</p>
+
+<p>Não escrevo código linha por linha — e essa é minha vantagem. Pesquiso o mercado, entendo a necessidade do cliente, projeto a experiência e direciono a IA para construir. A IA é a mão-de-obra que executa o código; eu sou a cabeça que decide o que construir, como construir e se está certo.</p>
+
+<p style="margin-top:6px;">Meu fluxo de trabalho: pesquisar o mercado e as necessidades do nicho > estruturar o PRD e a especificação do produto > prototipar mockups/referências visuais > direcionar a IA (Lovable, Claude Code, Replit, Antigravity, Hermes Agent) na geração do código > revisar, testar e ajustar cada funcionalidade > configurar infraestrutura (Supabase, Cloudflare, Paddle).</p>
+
+<div class="highlight">
+  "Sou o orquestrador. Pesquiso o mercado, entendo a necessidade do cliente, projeto a experiência e direciono a IA para construir. A IA é a mão-de-obra que executa o código; eu sou a cabeça que decide o que construir, como construir e se está certo. Num mercado onde empresas precisam de produtos digitais rápidos, minha função é eliminar meses de desenvolvimento substituindo por dias de orquestração — sem perder qualidade, segurança ou visão de produto."
+</div>
 
 <h2>Formação Acadêmica</h2>
 <p><strong>Pós-graduação em Vibe Coding AI</strong> — Impacta Tecnologia (2026-2027)</p>
@@ -72,18 +75,18 @@
   <div class="project-title">IMOVVY — Plataforma SaaS para Corretores de Imóveis</div>
   <div class="project-stack">Lovable · React · Supabase · Paddle · Sentry · 15.931 linhas</div>
   <div class="project-desc">SaaS com CRM, catálogo público, billing Paddle, dois assistentes de IA (suporte + leads), multi-agência, agenda e relatórios.</div>
-  <div class="project-role"><strong>Minha atuação:</strong> Especificação completa do SaaS (planos, trial, multi-agência), design de onboarding, Edge Functions (Paddle webhooks, Lovable API), políticas por imobiliária.</div>
+  <div class="project-role"><strong>Minha atuação:</strong> Especificação completa do SaaS (planos, trial, multi-agência), design de onboarding, Edge Functions via Claude Code, políticas por imobiliária.</div>
 </div>
 
 <div class="project">
   <div class="project-title">Amarella Creative — Site Premium para Estúdio de Branding</div>
   <div class="project-stack">TanStack Start · React 19 · Framer Motion · Cloudflare Workers · 6.655 linhas</div>
   <div class="project-desc">Site institucional com 13 seções, animações cinematográficas, design editorial oklch. Deploy em Cloudflare Workers.</div>
-  <div class="project-role"><strong>Minha atuação:</strong> Estruturação editorial, mockups de referência, deploy no Cloudflare Workers, extração de design system como skill.</div>
+  <div class="project-role"><strong>Minha atuação:</strong> Estruturação editorial, mockups de referência, deploy no Cloudflare Workers.</div>
 </div>
 
 <div class="project">
-  <div class="project-title">iVipCoin — Landing Page para Criptomoeda com Dados Ao Vivo</div>
+  <div class="project-title">iVipCoin — Landing Page para Criptomoeda</div>
   <div class="project-stack">React · CoinGecko API · Recharts · i18n · 7.049 linhas</div>
   <div class="project-desc">Landing page para criptomoeda BSC com cotações ao vivo, calculadora com preço histórico real, gráfico interativo e suporte bilíngue.</div>
   <div class="project-role"><strong>Minha atuação:</strong> Especificação de funcionalidades, design de layout com dados em tempo real, integração CoinGecko.</div>
@@ -101,7 +104,7 @@
 <div class="grid-2">
 <div>
 <h3>Orquestração de IA</h3>
-<p>Lovable (Certified Diamond), Replit, Antigravity, Claude Code</p>
+<p>Lovable (Certified Diamond), Claude Code, Replit, Antigravity, Hermes Agent</p>
 
 <h3>Produto</h3>
 <p>Pesquisa de mercado, PRD, especificação funcional, mockups/wireframes</p>
@@ -111,8 +114,7 @@
 <p>Supabase (Auth, DB, Storage, Edge Functions, RLS), Cloudflare Workers, Paddle</p>
 
 <h3>Tecnologias</h3>
-<p>React, TypeScript, Tailwind, shadcn/ui, TanStack Start, Framer Motion<br>
-<em>(geradas por IA — revisão e ajuste manuais)</em></p>
+<p>React, TypeScript, Tailwind, shadcn/ui, TanStack Start, Framer Motion<br><em>(geradas por IA — revisão e ajuste manuais)</em></p>
 </div>
 </div>
 
