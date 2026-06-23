@@ -58,6 +58,13 @@ Como **Lovable Certified Diamond**, domino o ecossistema Lovable para criar MVPs
 >
 > 🔗 [`kemaai/moises-perfumaria`](https://github.com/kemaai/moises-perfumaria)
 
+### 🏠 [IMOVVY — Plataforma SaaS Imobiliário](./projects/imovvy/)
+> **Stack:** React · TypeScript · Supabase · Paddle · Deno Edge · Sentry · IA · PWA
+>
+> Plataforma SaaS para corretores de imóveis com CRM, catálogo público, billing via Paddle, dois assistentes de IA (Maicon suporte + Mavie comercial) e suporte multi-agência. **15.931 linhas**, **28 páginas**, **13 tabelas**, **5 Edge Functions**.
+>
+> 🔗 [`kemaai/oimovvy`](https://github.com/kemaai/oimovvy) · 🏗️ **Quase pronto**
+
 > *Mais projetos serão adicionados em breve.*
 
 ---
