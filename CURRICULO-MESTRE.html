@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page { margin: 1.8cm 2.2cm; size: A4; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; line-height: 1.4; color: #1a1a1a; }
+
+  h1 { font-size: 20pt; font-weight: 700; margin-bottom: 1px; letter-spacing: -0.3px; }
+  .subtitle { font-size: 10.5pt; color: #444; margin-bottom: 4px; font-weight: 500; }
+  .contact { font-size: 8.5pt; color: #555; line-height: 1.5; margin-bottom: 10px; }
+
+  h2 { font-size: 12pt; font-weight: 600; margin-top: 16px; margin-bottom: 5px; padding-bottom: 2px; border-bottom: 1.2px solid #333; text-transform: uppercase; letter-spacing: 0.5px; }
+
+  p, li { font-size: 9.5pt; }
+
+  .summary { font-size: 9.5pt; line-height: 1.4; margin-bottom: 4px; }
+
+  .item { margin-top: 8px; }
+  .item-header { font-weight: 600; font-size: 10pt; }
+  .item-sub { font-size: 8.5pt; color: #555; font-style: italic; }
+  .item-desc { font-size: 9.5pt; margin-top: 2px; }
+  .item-bullets { margin: 2px 0 0 14px; }
+  .item-bullets li { margin-bottom: 2px; font-size: 9pt; }
+
+  .skills-grid { display: flex; gap: 20px; margin-top: 2px; }
+  .skills-col { flex: 1; }
+  .skills-col p { font-size: 9pt; margin-bottom: 1px; }
+
+  .note { font-size: 8pt; color: #888; font-style: italic; margin-top: 8px; }
+
+  .placeholder { color: #2277aa; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<h1>Adriano Silva</h1>
+<div class="subtitle">
+  <!-- Escolha UM alvo e apague o outro -->
+  <span style="background:#e8f0fe; padding:1px 6px; border-radius:2px;">Alvo: Analista de Produto Jr / AI Solutions Analyst</span>
+</div>
+<div class="contact">
+  Sao Paulo, SP | adrianojsilva86@gmail.com | (11) 96652-4658
+</div>
+
+<h2>Resumo</h3>
+<p class="summary">
+Profissional com perfil hibrido de <strong>produto e tecnologia</strong>, formado em Gestao de TI com MBA em IA e Estrategia de Dados. Atua na interseccao entre pesquisa de mercado, especificacao de produtos e orquestracao de ferramentas de IA para entregar sistemas digitais completos — do PRD ao deploy. Experiencia com 6 produtos entregues, incluindo SaaS com billing recorrente, sistemas multi-tenant, plataformas com assistentes de IA e sites institucionais.
+</p>
+
+<h2>Formacao</h3>
+<p><strong>Pos-graduacao em Vibe Coding AI</strong> — Impacta Tecnologia (2026-2027)</p>
+<p><strong>MBA em IA, Estrategia de Dados e Eficiencia</strong> — Frons Educacao (2024-2025)</p>
+<p><strong>Gestao em TI</strong> — Universidade Paulista (2014-2016)</p>
+<p><strong>Desenvolvimento de Sistemas</strong> — Senac (2014-2015)</p>
+
+<h2>Certificacao</h3>
+<p><strong>Lovable Certified Diamond</strong> — Lovable (2025) · reconhecimento de proficiencia em desenvolvimento de produtos com IA</p>
+
+<h2>Experiencia Relevante — Projetos</h3>
+
+<!-- ===================== MODELO ===================== -->
+<!--
+  FORMULA X-Y-Z DO GOOGLE:
+  "Accomplished [X] as measured by [Y], by doing [Z]"
+
+  X = o que voce fez (resultado concreto)
+  Y = como foi medido (numero, %, prazo, escala)
+  Z = como voce fez (metodo, ferramenta, acao)
+
+  Exemplo:
+  "Entreguei um sistema SaaS completo em 14 dias corridos, reduzindo o tempo estimado de desenvolvimento em 80%, ao estruturar o PRD, prototipar mockups e orquestrar ferramentas de IA para geracao e iteracao do codigo."
+-->
+
+<div class="item">
+  <div class="item-header">KemaFinance — Sistema de Gestao Financeira Pessoal com IA</div>
+  <div class="item-sub">Produto digital completo · [periodo, ex: 2025] · [lovable / supabase / gemini AI / react / vite]</div>
+  <div class="item-desc">Sistema de gestao financeira pessoal com dashboard, categorizacao inteligente de gastos, metas 50-30-20 e consultoria via Gemini AI.</div>
+  <ul class="item-bullets">
+    <li><strong class="placeholder">[RESULTADO]</strong> Entreguei <span class="placeholder">[X]</span>, resultando em <span class="placeholder">[Y]</span>, ao <span class="placeholder">[Z — ex: pesquisar necessidades do nicho, estruturar o PRD, prototipar mockups e orquestrar IA para gerar e iterar o codigo]</span>.</li>
+    <li><strong class="placeholder">[OUTRO RESULTADO]</strong> Configurei politicas de seguranca (RLS) no Supabase para <span class="placeholder">[quantas tabelas]</span> tabelas, garantindo que dados financeiros estivessem acessiveis apenas ao usuario proprietario.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="item-header">Moises Perfumaria — Sistema Multi-tenant com Catalogo Online</div>
+  <div class="item-sub">Produto para cliente real (perfumaria) · [periodo] · [lovable / supabase / pwa / edge functions]</div>
+  <div class="item-desc">Sistema de gestao que atende um estabelecimento comercial real com catalogo online publico, PDV, controle de estoque, encomendas, recebiveis e CRM com templates de cobranca.</div>
+  <ul class="item-bullets">
+    <li><strong class="placeholder">[RESULTADO]</strong> Levantei requisitos com cliente real e entreguei <span class="placeholder">[o que]</span>, permitindo <span class="placeholder">[impacto — ex: que o cliente passasse a ter catalogo online integrado ao WhatsApp]</span>, ao <span class="placeholder">[como — ex: estruturar funcionalidades em reunioes, prototipar mockups e direcionar IA na geracao e ajustes]</span>.</li>
+    <li><strong class="placeholder">[OUTRO RESULTADO]</strong> Configurei Edge Function com validacao de dados e politicas RLS por tenant, isolando dados de cada cliente em arquitetura multi-tenant.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="item-header">IMOVVY — Plataforma SaaS para Corretores de Imoveis</div>
+  <div class="item-sub">Produto SaaS com billing recorrente · [periodo] · [lovable / supabase / paddle / sentry / edge functions]</div>
+  <div class="item-desc">Plataforma com CRM, catalogo publico de imoveis, billing via Paddle (dois planos, trial 14 dias), dois assistentes de IA (suporte interno + captura de leads), multi-agencia com ate 5 corretores.</div>
+  <ul class="item-bullets">
+    <li><strong class="placeholder">[RESULTADO]</strong> Especifiquei produto SaaS completo (planos, trial, multi-agencia, onboarding) e entreguei <span class="placeholder">[X]</span>, viabilizando <span class="placeholder">[Y — ex: modelo de assinatura recorrente com Paddle]</span>, ao <span class="placeholder">[Z]</span>.</li>
+    <li><strong class="placeholder">[OUTRO RESULTADO]</strong> Configurei Edge Functions para processar webhooks do Paddle e gerenciar autenticacao via Lovable API com Claude Code.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="item-header">Amarella Creative — Site Premium para Estudio de Branding</div>
+  <div class="item-sub">Site institucional premium · [periodo] · [tanstack start / react 19 / framer motion / cloudflare workers]</div>
+  <div class="item-desc">Site com 13 secoes, animacoes cinematograficas, design editorial com paleta oklch, deploy em Cloudflare Workers.</div>
+  <ul class="item-bullets">
+    <li><strong class="placeholder">[RESULTADO]</strong> Estruturei editorialmente 13 secoes de site institucional premium, resultando em <span class="placeholder">[Y]</span>, ao criar mockups de referencia e direcionar IA na implementacao com TanStack Start e Framer Motion.</li>
+    <li><strong class="placeholder">[OUTRO RESULTADO]</strong> Configurei deploy em Cloudflare Workers e extrai sistema de design como biblioteca reutilizavel para projetos futuros.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="item-header">iVipCoin — Landing Page para Criptomoeda com Dados Ao Vivo</div>
+  <div class="item-sub">Landing page para token BSC · [periodo] · [react / coingecko api / recharts / i18n / tanstack query]</div>
+  <div class="item-desc">Landing page com cotacoes ao vivo, calculadora de investimento com preco historico real, grafico interativo, conversor de moeda e suporte bilingue.</div>
+  <ul class="item-bullets">
+    <li><strong class="placeholder">[RESULTADO]</strong> Especifiquei e entreguei landing page com <span class="placeholder">[5 funcionalidades em tempo real]</span>, atendendo requisitos de <span class="placeholder">[cliente de cripto]</span>, ao projetar layout e integrar API CoinGecko via orquestracao de IA.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <div class="item-header">Formulario KemaSites — Sistema de Briefing para Criacao de Sites</div>
+  <div class="item-sub">Ferramenta operacional interna · [periodo] · [react / supabase / zod / react-hook-form]</div>
+  <div class="item-desc">Sistema de briefing multi-etapas com 15 secoes de coleta, upload de arquivos ao Supabase Storage e painel admin com geracao automatica de PRD.</div>
+  <ul class="item-bullets">
+    <li><strong class="placeholder">[RESULTADO]</strong> Estruturei formulario de 15 secoes para capturar briefing completo de criacao de sites, eliminando <span class="placeholder">[o que — ex: a necessidade de reunioes preliminares]</span>, ao projetar fluxo de etapas com validacao Zod e painel admin com controle de acesso.</li>
+  </ul>
+</div>
+
+<h2>Habilidades</h3>
+
+<div class="skills-grid">
+<div class="skills-col">
+  <p><strong>Produto:</strong> Pesquisa de mercado · PRD · Especificacao funcional · User stories · Wireframes/mockups · Fluxo de usuario · Teste de aceitacao</p>
+  <p><strong>Orquestracao de IA:</strong> Lovable (Certified Diamond) · Claude Code · Replit · Antigravity · Hermes Agent · Prompt engineering</p>
+</div>
+<div class="skills-col">
+  <p><strong>Infraestrutura:</strong> Supabase (Auth, DB, Storage, Edge Functions, RLS) · Cloudflare Workers · Paddle (billing) · Git/GitHub</p>
+  <p><strong>Tecnologias:</strong> React · TypeScript · Tailwind · shadcn/ui · TanStack Query · Recharts · Vite</p>
+</div>
+</div>
+
+<p style="font-size:9pt; margin-top:4px;"><strong>Ferramentas:</strong> ChatGPT · Google Workspace · N8N · OmniRoute · Notion</p>
+
+<h2>Idiomas</h3>
+<p><strong>Portugues:</strong> Nativo | <strong>Ingles:</strong> Intermediario (leitura, escrita e compreensao tecnica)</p>
+
+<hr style="margin-top:14px; border:none; border-top:1px dashed #ccc;">
+
+<!-- ===================== INSTRUCOES ===================== -->
+<h2 style="border-bottom-color:#888; color:#888;">Instrucoes de Uso</h2>
+
+<p style="font-size:8.5pt; color:#666; line-height:1.3;">
+<strong>1. ESCOLHA O ALVO</strong> — No topo, substitua o badge "Alvo" por Analista de Produto Jr ou AI Solutions Analyst conforme a vaga.<br>
+<strong>2. PREENCHA OS <span style="color:#2277aa;">[PLACEHOLDERS]</span></strong> — Cada projeto tem bullets marcados com <span style="color:#2277aa;">[RESULTADO]</span> e <span style="color:#2277aa;">[X, Y, Z]</span>. Substitua por dados reais.<br>
+<strong>3. FORMULA X-Y-Z:</strong> "Entreguei [X — resultado concreto] resultando em [Y — impacto mensuravel], ao [Z — metodo]".<br>
+Ex: "Entreguei sistema SaaS completo em 14 dias, reduzindo prazo estimado em 80%, ao estruturar PRD e orquestrar IA."<br>
+<strong>4. REMOVA O QUE NAO USA:</strong> Se um projeto nao se aplica a vaga, delete o bloco inteiro. Menos e mais.<br>
+<strong>5. EXPORTE COMO PDF:</strong> Abra no navegador, Ctrl+P, margens minimas, salvar como PDF.<br>
+<strong>6. AJUSTE POR VAGA:</strong> Para AI Solutions Analyst — destaque mais Claude Code, Hermes Agent, prompt engineering, AI agents. Para Produto Jr — destaque mais pesquisa, PRD, especificacao, mockups.
+</p>
+
+</body>
+</html>
