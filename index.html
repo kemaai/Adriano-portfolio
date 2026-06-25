@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adriano Silva — AI Product Builder</title>
+<meta name="description" content="Portfolio profissional de Adriano Silva — projetos digitais completos, do briefing ao deploy, usando IA como engine de producao.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0a0f;
+  --bg-card: #111118;
+  --bg-hover: #1a1a24;
+  --text: #e0e0e8;
+  --text-secondary: #8888a0;
+  --accent: #5ee0b0;
+  --accent-dim: rgba(94, 224, 176, 0.1);
+  --border: #1e1e2a;
+  --radius: 10px;
+  --max-w: 820px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Nav */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(10,10,15,0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+nav .inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+nav .logo {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text);
+  text-decoration: none;
+}
+nav .links { display: flex; gap: 24px; }
+nav .links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 500;
+  transition: color .2s;
+}
+nav .links a:hover { color: var(--accent); }
+
+/* Container */
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hero */
+.hero {
+  padding: 140px 0 60px;
+}
+.hero h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.hero .tagline {
+  font-size: 18px;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.hero p {
+  font-size: 15.5px;
+  color: var(--text-secondary);
+  max-width: 640px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+.hero .links-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.hero .links-row a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color .2s;
+}
+.hero .links-row a:hover { color: var(--accent); }
+.hero .links-row a svg { width: 18px; height: 18px; }
+
+/* Sections */
+section { padding: 64px 0; }
+.section-title {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+/* About */
+.about p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+.about p strong { color: var(--text); font-weight: 600; }
+
+/* Work */
+.work-item {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+.work-item:last-child { border-bottom: none; }
+.work-date {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  padding-top: 2px;
+}
+.work-content h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.work-content h3 a {
+  color: #fff;
+  text-decoration: none;
+  transition: color .2s;
+}
+.work-content h3 a:hover { color: var(--accent); }
+.work-content p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+.work-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.work-tags span {
+  font-size: 11px;
+  background: var(--accent-dim);
+  color: var(--accent);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* Projects */
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 16px;
+  transition: background .2s, border-color .2s;
+}
+.project-card:hover {
+  background: var(--bg-hover);
+  border-color: rgba(94,224,176,0.2);
+}
+.project-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.project-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.project-header h3 a {
+  color: #fff;
+  text-decoration: none;
+  transition: color .2s;
+}
+.project-header h3 a:hover { color: var(--accent); }
+.project-header .arrow { color: var(--accent); font-size: 14px; }
+.project-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.project-stats {
+  font-size: 12px;
+  color: var(--accent);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.project-tags span {
+  font-size: 11px;
+  background: rgba(255,255,255,0.04);
+  color: var(--text-secondary);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+/* Education & Skills */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.edu-item {
+  margin-bottom: 16px;
+}
+.edu-item h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 2px;
+}
+.edu-item p {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.skills-list span {
+  font-size: 12px;
+  background: var(--bg-card);
+  color: var(--text);
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+/* Resume CTA */
+.resume-cta {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  text-align: center;
+  margin: 8px 0;
+}
+.resume-cta h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.resume-cta p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent);
+  color: #0a0a0f;
+  font-weight: 600;
+  font-size: 13.5px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: opacity .2s;
+}
+.btn:hover { opacity: 0.9; }
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  margin-left: 10px;
+  transition: border-color .2s, color .2s;
+}
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  opacity: 1;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 0;
+  text-align: center;
+}
+footer p {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+footer a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color .2s;
+}
+footer a:hover { color: var(--accent); }
+
+/* Responsive */
+@media (max-width: 640px) {
+  .hero h1 { font-size: 28px; }
+  .hero { padding: 120px 0 40px; }
+  .work-item { grid-template-columns: 1fr; gap: 6px; }
+  .grid-2 { grid-template-columns: 1fr; }
+  nav .links { gap: 14px; }
+  nav .links a { font-size: 12px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a href="#" class="logo">Adriano Silva</a>
+    <div class="links">
+      <a href="#sobre">Sobre</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#curriculo">Curriculo</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+<!-- Hero -->
+<header class="hero">
+  <h1>Adriano Silva</h1>
+  <div class="tagline">AI Product Builder</div>
+  <p>
+    Pesquisa, especifica, projeta e entrega produtos digitais completos usando inteligencia artificial como engine de producao. Do PRD ao deploy — em dias, nao em meses.
+  </p>
+  <div class="links-row">
+    <a href="https://github.com/kemaai" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+      GitHub
+    </a>
+    <a href="https://linkedin.com/in/adrianojsilva86" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      LinkedIn
+    </a>
+    <a href="mailto:adrianojsilva86@gmail.com">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      Email
+    </a>
+  </div>
+</header>
+
+<!-- Sobre -->
+<section id="sobre">
+  <div class="section-title">Sobre</div>
+  <div class="about">
+    <p>
+      Profissional com perfil hibrido de <strong>produto e tecnologia</strong>, formado em Gestao de TI com MBA em IA e Estrategia de Dados e certificacao Lovable Certified Diamond. Atua na interseccao entre pesquisa de mercado, especificacao de produtos e orquestracao de IA para entregar sistemas digitais completos — do PRD ao deploy.
+    </p>
+    <p>
+      <strong>Fluxo de trabalho:</strong> pesquisar necessidades do nicho, estruturar PRD e especificacoes, prototipar mockups como referencia visual, direcionar ferramentas de IA (Lovable, Claude Code, Hermes Agent, Replit) na geracao e iteracao do codigo, revisar e validar cada entrega.
+    </p>
+    <p>
+      Experiencia previa como <strong>Analista de Suporte na Locaweb</strong> (atendimento a clientes de hospedagem e email) e <strong>Estagiario de Desenvolvimento na IT Works</strong> (codificacao e testes em VB6).
+    </p>
+  </div>
+</section>
+
+<!-- Experiencia -->
+<section id="experiencia">
+  <div class="section-title">Experiencia</div>
+
+  <div class="work-item">
+    <div class="work-date">2025 — atual</div>
+    <div class="work-content">
+      <h3>Analista de IA · Freelancer</h3>
+      <p>Desenvolvimento de produtos digitais completos utilizando ferramentas de Vibe Coding. Pesquisa de mercado, especificacao funcional, prototipacao com mockups e orquestracao de IA para geracao e iteracao de codigo. 6 projetos entregues.</p>
+    </div>
+  </div>
+
+  <div class="work-item">
+    <div class="work-date">set 2016 — mai 2017</div>
+    <div class="work-content">
+      <h3>Analista de Suporte · Locaweb</h3>
+      <p>Suporte tecnico a usuarios de Email e Hospedagem de sites, via telefone e acesso remoto. Desenvolvimento de capacidade analitica e foco em experiencia do cliente.</p>
+    </div>
+  </div>
+
+  <div class="work-item">
+    <div class="work-date">nov 2015 — jun 2016</div>
+    <div class="work-content">
+      <h3>Estagiario de Desenvolvimento · IT Works</h3>
+      <p>Codificacao e testes de programas em VB6, correcao de falhas e manutencao de sistemas legados.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- Projetos -->
+<section id="projetos">
+  <div class="section-title">Projetos</div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3><a href="https://github.com/kemaai/kema-finance" target="_blank">KemaFinance</a></h3>
+      <span class="arrow">↗</span>
+    </div>
+    <div class="project-desc">Sistema de gestao financeira pessoal com dashboard inteligente, categorizacao automatizada de gastos, metas 50-30-20 e consultoria via Gemini AI. 11 tabelas com RLS por usuario, Edge Function com autenticacao JWT e PWA com suporte offline parcial.</div>
+    <div class="project-stats">7 modulos · 18 migrations · 1 Edge Function</div>
+    <div class="project-tags">
+      <span>React</span><span>Supabase</span><span>Gemini AI</span><span>shadcn/ui</span><span>PWA</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3><a href="https://github.com/kemaai/oimovvy" target="_blank">IMOVVY</a></h3>
+      <span class="arrow">↗</span>
+    </div>
+    <div class="project-desc">Plataforma SaaS para corretores de imoveis com CRM, catalogo publico, billing via Paddle (2 planos + trial) e dois assistentes de IA (suporte interno + captura de leads). Multi-agencia com ate 5 corretores.</div>
+    <div class="project-stats">16 tabelas · 6 Edge Functions · Paddle · Sentry · 2 assistentes IA</div>
+    <div class="project-tags">
+      <span>React</span><span>Supabase</span><span>Paddle</span><span>Claude Code</span><span>Sentry</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3><a href="https://github.com/kemaai/moises-perfumaria" target="_blank">Moises Perfumaria</a></h3>
+      <span class="arrow">↗</span>
+    </div>
+    <div class="project-desc">Sistema de gestao multi-tenant para perfumaria com catalogo online publico integrado ao WhatsApp, PDV, estoque, encomendas, recebiveis e CRM. Em uso por estabelecimento comercial real.</div>
+    <div class="project-stats">17 tabelas · 16 migrations · RLS por tenant</div>
+    <div class="project-tags">
+      <span>React</span><span>Supabase</span><span>Multi-tenant</span><span>PWA</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3><a href="https://github.com/kemaai/amarellacreative" target="_blank">Amarella Creative</a></h3>
+      <span class="arrow">↗</span>
+    </div>
+    <div class="project-desc">Site institucional premium para estudio de branding com 13 secoes, animacoes cinematograficas em Framer Motion e deploy global em Cloudflare Workers. Design editorial com sistema de componentes reutilizaveis.</div>
+    <div class="project-tags">
+      <span>TanStack Start</span><span>React 19</span><span>Framer Motion</span><span>Cloudflare Workers</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3><a href="https://github.com/kemaai/ivipcoin" target="_blank">iVipCoin</a></h3>
+      <span class="arrow">↗</span>
+    </div>
+    <div class="project-desc">Landing page para criptomoeda token BSC com cotacoes ao vivo via CoinGecko, calculadora de investimento com preco historico, grafico interativo Recharts, conversor bilingue e suporte i18n.</div>
+    <div class="project-stats">5 funcionalidades em tempo real · API CoinGecko · i18n</div>
+    <div class="project-tags">
+      <span>React</span><span>CoinGecko API</span><span>Recharts</span><span>TanStack Query</span><span>i18n</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3><a href="https://github.com/kemaai/formulario-kemasites-72" target="_blank">Formulario KemaSites</a></h3>
+      <span class="arrow">↗</span>
+    </div>
+    <div class="project-desc">Sistema de briefing multi-etapas com 15 secoes de coleta, upload ao Supabase Storage com validacao de tipo e tamanho, persistencia automatica via localStorage e painel admin com geracao de PRD em 1 clique.</div>
+    <div class="project-stats">15 secoes · 13 migrations · PRD automatico · Admin</div>
+    <div class="project-tags">
+      <span>React</span><span>Supabase</span><span>Zod</span><span>react-hook-form</span>
+    </div>
+  </div>
+</section>
+
+<!-- Formacao e Habilidades -->
+<section>
+  <div class="section-title">Formacao</div>
+  <div class="grid-2">
+    <div>
+      <div class="edu-item">
+        <h4>Pos-graduacao em Vibe Coding AI</h4>
+        <p>Impacta Tecnologia — 2026 a 2027 (cursando)</p>
+      </div>
+      <div class="edu-item">
+        <h4>MBA em IA, Estrategia de Dados e Eficiencia</h4>
+        <p>Frons Educacao — 2024 a 2025</p>
+      </div>
+      <div class="edu-item">
+        <h4>Gestao em TI</h4>
+        <p>Universidade Paulista — 2014 a 2016</p>
+      </div>
+      <div class="edu-item">
+        <h4>Desenvolvimento de Sistemas</h4>
+        <p>Senac — 2014 a 2015</p>
+      </div>
+    </div>
+    <div>
+      <div class="edu-item">
+        <h4>Certificacao</h4>
+        <p>Lovable Certified Diamond — 2025</p>
+      </div>
+      <div class="edu-item">
+        <h4>Idiomas</h4>
+        <p>Portugues nativo · Ingles elementar</p>
+      </div>
+      <div class="edu-item">
+        <h4>Competencias</h4>
+      </div>
+      <div class="skills-list">
+        <span>Produto</span><span>PRD</span><span>Pesquisa</span><span>Mockups</span>
+        <span>Lovable</span><span>Claude Code</span><span>Hermes Agent</span><span>Supabase</span>
+        <span>React</span><span>TypeScript</span><span>Tailwind</span><span>Git</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Curriculo -->
+<section id="curriculo">
+  <div class="section-title">Curriculo</div>
+  <div class="resume-cta">
+    <h3>Baixe meu curriculo completo</h3>
+    <p>PDF com experiencia, projetos, formacao e habilidades — pronto para enviar para recrutadores.</p>
+    <div>
+      <a href="Curriculo_Adriano_Silva.pdf" class="btn" download>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+        Baixar PDF
+      </a>
+      <a href="CURRICULO-MESTRE.html" class="btn btn-outline" target="_blank">
+        Versao editavel
+      </a>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <p>
+    Construido com HTML e CSS puro · Hospedado no <a href="https://pages.github.com" target="_blank">GitHub Pages</a><br>
+    <a href="https://github.com/kemaai/Adriano-portfolio" target="_blank">Codigo fonte</a> · © 2026 Adriano Silva
+  </p>
+</footer>
+
+</body>
+</html>
